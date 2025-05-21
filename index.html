@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrizio Gentilini - Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <meta property="og:title" content="Fabrizio Gentilini - Portfolio">
+    <meta property="og:description" content="Scopri il mio portfolio: sviluppatore web con competenze in HTML, CSS, JavaScript, Bootstrap e altro. Contattami per il tuo prossimo progetto!">
+    <meta property="og:image" content="URL_ASSOLUTO_DELLA_TUA_IMMAGINE_DI_ANTEPRIMA.jpg">
+    <meta property="og:url" content="https://google.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fabrizio Gentilini</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bio">Bio</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="d-flex align-items-center justify-content-center text-white bg-primary vh-100">
+            <div class="text-center">
+                <h1 class="display-3">Benvenuto nel Mio Portfolio</h1>
+                <p class="lead">Sono uno UX/UI Designer, e creo esperienze per le persone.</p>
+                <a href="#bio" class="btn btn-light btn-lg mt-3">Scopri di più</a>
+            </div>
+        </section>
+
+        <section id="bio" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">Ciao, sono Fabrizio Gentilini</h2>
+                <img src="assets/img/tua-foto2.jpg" alt="La tua foto" class="profile-photo rounded-circle img-fluid mb-4 border border-primary border-4">
+                <p class="lead col-lg-8 mx-auto">
+                    Sono un UX/UI Designer che ama risolvere problemi complessi attraverso il design centrato sull'utente. 
+                    Eccello nel creare percorsi utente fluidi e interfacce accattivanti che migliorano l'usabilità e l'accessibilità dei prodotti digitali.
+
+                </p>
+                <div class="mt-4">
+                    <a href="https://www.linkedin.com/in/fabrizio-gentilini-78026a310" target="_blank" class="btn btn-outline-primary mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.behance.net/fabrizigentili" target="_blank" class="btn btn-outline-primary mx-2"><i class="fab fa-twitter"></i> Behance</a>
+                    <a href="https://github.com/settings/profile" target="_blank" class="btn btn-outline-dark mx-2"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">I Miei Lavori</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="assets/img/progetto-1.jpg" class="card-img-top" alt="Immagine Progetto 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Progetto User Interface</h5>
+                                <p class="card-text">In questo progetto di User Interface ho dimostrato la mia capacità nel creare interfacce utente intuitive e accattivanti. Ho curato ogni dettaglio per garantire un'esperienza utente fluida e coinvolgente.</p>
+                                <div class="mt-auto">
+                                    <a href="assets/pdf/Progetto User Interface 1 di Fabrizio Gentilini copia.pdf" target="_blank" class="btn btn-primary btn-sm">Guarda il progetto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="assets/img/progetto-2.jpg" class="card-img-top" alt="Immagine Progetto 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Progetto wireframing</h5>
+                                <p class="card-text">Un'esplorazione approfondita del processo di wireframing, dove ho trasformato concetti complessi in schemi funzionali. Il progetto evidenzia la mia abilità nel definire la struttura e il flusso di un prodotto digitale, ponendo le basi per un'esperienza utente efficace.</p>
+                                <div class="mt-auto">
+                                    <a href="assets/pdf/Progetto Wireframing 1 di Fabrizio Gentilini.pdf" target="_blank" class="btn btn-primary btn-sm">Guarda il progetto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="assets/img/progetto-3.jpg" class="card-img-top" alt="Immagine Progetto 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Progetto Copywriting </h5>
+                                <p class="card-text">Attraverso il 'Progetto Copywriting' ho esplorato il potere delle parole nel design UX/UI. Ho lavorato sulla creazione di testi chiari, persuasivi e user-friendly, essenziali per guidare l'utente e migliorare l'interazione complessiva del prodotto.</p>
+                                <div class="mt-auto">
+                                    <a href="assets/pdf/Progetto Copywriting di Fabrizio Gentilini.pdf" target="_blank" class="btn btn-primary btn-sm">Guarda il progetto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+         <section id="skills" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">Le Mie Skill</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <span class="badge text-bg-primary fs-5 m-2">HTML5</span>
+                    <span class="badge text-bg-primary fs-5 m-2">CSS3 / SCSS</span>
+                    <span class="badge text-bg-primary fs-5 m-2">Bootstrap 5</span>
+                    <span class="badge text-bg-primary fs-5 m-2">JavaScript</span>
+                    <span class="badge text-bg-primary fs-5 m-2">Figma</span>
+                    <span class="badge text-bg-primary fs-5 m-2">Adobe illustrator </span>
+                    <span class="badge text-bg-primary fs-5 m-2">Adobe Indesign </span>
+
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Fabrizio Gentilini. Tutti i diritti riservati.</p>
+            <div class="social-links-footer mt-3">
+                <a href="https://www.linkedin.com/in/fabrizio-gentilini-78026a310" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="LINK_AL_TUO_PROFILO_GITHUB" target="_blank" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/TUA_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous"></script> <script src="js/main.js"></script>
+
+</body>
+</html>

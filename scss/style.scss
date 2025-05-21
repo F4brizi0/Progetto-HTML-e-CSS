@@ -1,0 +1,170 @@
+// assets/scss/style.scss
+
+// Importa le variabili
+@import 'variables';
+// Importa i mixin (se ne hai)
+@import 'mixins';
+
+/* --- Stili Globali e Reset --- */
+body {
+    font-family: $font-family-sans-serif;
+    line-height: 1.6;
+    color: $dark;
+    background-color: $light;
+    padding-top: 56px; /* Altezza della navbar fissa di Bootstrap */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Navbar (Bootstrap standard con alcune personalizzazioni) --- */
+.navbar {
+    transition: background-color 0.3s ease;
+    &.scrolled {
+        background-color: darken($dark, 5%); // Un po' più scura quando scrollata
+    }
+}
+
+
+/* --- Sezioni Comuni --- */
+section {
+    padding: ($spacer * 4) 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+    margin-bottom: $spacer * 1.5;
+}
+
+/* --- Sezione Hero --- */
+#hero {
+    /* La classe Bootstrap vh-100 già imposta l'altezza */
+    .display-3 {
+        font-size: 3.5rem;
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* --- Sezione Bio --- */
+#bio {
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-width: $profile-photo-border-width !important; /* Overrides Bootstrap border-4 */
+    }
+
+    p.lead {
+        font-size: 1.25rem;
+        line-height: 1.8;
+    }
+}
+
+/* --- Sezione Portfolio (Layout con Grid di Bootstrap - basato su Flexbox) --- */
+/* Le classi row e col di Bootstrap usano già Flexbox per la griglia */
+#portfolio {
+    .card {
+        border: none;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+        }
+    }
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+    .card-title {
+        color: $dark;
+    }
+}
+
+/* --- Sezione Skill --- */
+#skills {
+    .badge {
+        font-size: 1.1rem;
+        padding: $spacer / 2 $spacer;
+        margin: $spacer / 2;
+        background-color: $primary !important; // Override Bootstrap default background
+        color: $white !important;
+    }
+}
+
+/* --- Pagina CV (Layout con Flexbox/Grid di Bootstrap) --- */
+#cv-content {
+    .cv-photo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    ul {
+        padding-left: 0;
+    }
+    ul li {
+        margin-bottom: $spacer / 2;
+    }
+    .badge {
+        font-size: 0.9rem;
+        padding: $spacer / 2 $spacer;
+    }
+}
+
+/* --- Pagina Contatti (Layout con Bootstrap Form) --- */
+#contact-page {
+    .form-label {
+        font-weight: bold;
+    }
+    .form-control {
+        border-radius: 0.25rem;
+        &:focus {
+            border-color: $primary;
+            box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+        }
+    }
+    #form-status {
+        padding: $spacer;
+        border-radius: 0.25rem;
+        &.success {
+            background-color: lighten($success, 30%);
+            color: darken($success, 30%);
+        }
+        &.error {
+            background-color: lighten($danger, 30%);
+            color: darken($danger, 30%);
+        }
+    }
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: $dark;
+    color: $white;
+    padding: ($spacer * 2) 0;
+    .social-links-footer a {
+        color: $white;
+        margin: 0 $spacer;
+        &:hover {
+            color: lighten($primary, 20%);
+        }
+    }
+}
+
+/* --- Responsività (Bootstrap gestisce gran parte, ma qui puoi aggiungere personalizzazioni) --- */
+@media (max-width: 768px) {
+    /* Il menu sticky per mobile è gestito dallo script JS e dalle classi Bootstrap fixed-top */
+    body {
+        padding-top: 56px; /* Assicura che il contenuto non sia coperto dalla navbar */
+    }
+    h1, h2 {
+        font-size: 2rem;
+    }
+    p.lead {
+        font-size: 1rem;
+    }
+}
